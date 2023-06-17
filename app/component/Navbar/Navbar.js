@@ -3,14 +3,13 @@ import { AiOutlineCaretUp, AiOutlineCaretDown } from 'react-icons/ai';
 import Link from 'next/link';
 import React, { useState } from 'react';
 import NavLinks from './NavLinks';
-import Button from './Button';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import { Links } from './NavData';
 
 const Navbar = () => {
     const [open, setOpen] = useState(false)
     const [up, setUp] = useState(false)
     const [down, setDown] = useState(false)
+    const [client, setClient] = useState(false)
 
 
     return (
@@ -21,7 +20,7 @@ const Navbar = () => {
                     <div className='text-3xl md:hidden block' onClick={() => setOpen(!open)}>
                         {/* <FaBars name={`${open ? 'close' : 'menu'}`} /> */}
                         {
-                            open ? <FaBars /> : <FaTimes />
+                            !open ? <FaBars /> : <FaTimes />
                         }
 
                     </div>
@@ -36,17 +35,21 @@ const Navbar = () => {
 
                     </ul>
                     <div className='md:block ml-10 hidden'>
-                        <Button />
+                        <button className='bg-yellow-300  px-14 py-4 rounded text-black'>
+                            Contact Us
+                        </button>
                     </div>
                 </div>
 
 
                 {/* for mobile device responsive */}
-                <ul className={`md:hidden bg-white absolute w-full top-0 py-24 pl-4  duration-500 ${open ? 'top-0' : 'top-[-100%]'}`}>
+                <ul className={`md:hidden bg-white absolute w-full top-0 py-10 mt-8 pl-4 mb-6  duration-500 ${open ? 'top-0' : 'top-[-100%]'}`}>
                     <div>
-                        <Button />
+                        <button className='bg-yellow-300  px-14 py-4 rounded text-black'>
+                            Contact Us
+                        </button>
                     </div>
-                    <NavLinks></NavLinks>
+                    {/* <NavLinks></NavLinks> */}
                     {/* <li>
                         <h1 onClick={() => setUp(!up)} className="py-4 flex items-center">
                             Our service
@@ -76,7 +79,7 @@ const Navbar = () => {
                                 </ul>
                             </div>
                         }
-                    </li>
+                    </li> */}
                     <div>
                         <li>
                             <h1 onClick={() => setDown(!down)} className="py-4 flex  items-center">
@@ -108,7 +111,39 @@ const Navbar = () => {
                                 </div>
                             }
                         </li>
-                    </div> */}
+                    </div>
+                    <div>
+                        <li>
+                            <h1 onClick={() => setClient(!client)} className="py-4 flex  items-center">
+                                Our service
+                                {client ? (
+                                    <AiOutlineCaretUp />
+                                ) : (
+                                    <AiOutlineCaretDown />
+                                )}
+                            </h1>
+                            {
+                                !down && client && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
+                                    <ul className='text-sm font-semibold   my-3'>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Our food
+                                        </li>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Photo Shooting
+                                        </li>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Content Creation
+                                        </li>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Sponsorship
+                                            Performance
+                                        </li>
+
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                    </div>
 
 
                 </ul>
