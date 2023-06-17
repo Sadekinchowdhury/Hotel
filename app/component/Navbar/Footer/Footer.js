@@ -75,7 +75,7 @@ const Footer = () => {
                     {
                         data.map(list => <div>
                             <div className='p-8'>
-                                <h1 className='font-[Roboto Mono] text-xl font-semibold mb-10'>{list.title}</h1>
+                                <h1 className='font-[Roboto Mono] text-xl font-semibold mb-8'>{list.title}</h1>
 
                                 <ul className='mt-8 cursor-pointer text-hover:bg-blue-600 text[hover:bg-blue-600]'>
                                     <li className='mt-6 cursor-pointer'>
@@ -96,12 +96,8 @@ const Footer = () => {
                         </div>
                         )
                     }
-                    <div>
 
-                    </div>
-                    <div>
 
-                    </div>
                 </div>
                 <div className="text-center py-4 text-gray-500">
                     <p>

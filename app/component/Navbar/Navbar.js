@@ -80,6 +80,7 @@ const Navbar = () => {
                             </div>
                         }
                     </li> */}
+                    {/* service */}
                     <div>
                         <li>
                             <h1 onClick={() => setDown(!down)} className="py-4 flex  items-center">
@@ -112,10 +113,11 @@ const Navbar = () => {
                             }
                         </li>
                     </div>
+                    {/* <h1>client</h1> */}
                     <div>
                         <li>
                             <h1 onClick={() => setClient(!client)} className="py-4 flex  items-center">
-                                Our service
+                                Our Client
                                 {client ? (
                                     <AiOutlineCaretUp />
                                 ) : (
@@ -126,16 +128,15 @@ const Navbar = () => {
                                 !down && client && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
                                     <ul className='text-sm font-semibold   my-3'>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Our food
+                                            Resturent
                                         </li>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Photo Shooting
+                                            Franchise
                                         </li>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Content Creation
+                                            Hotel
                                         </li>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Sponsorship
                                             Performance
                                         </li>
 
@@ -144,6 +145,35 @@ const Navbar = () => {
                             }
                         </li>
                     </div>
+                    {/* Our values */}
+                    <div>
+                        <li>
+                            <h1 onClick={() => setUp(!up)} className="py-4 flex  items-center">
+                                Values
+                                {up ? (
+                                    <AiOutlineCaretUp />
+                                ) : (
+                                    <AiOutlineCaretDown />
+                                )}
+                            </h1>
+                            {
+                                !down && !client && up && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
+                                    <ul className='text-sm font-semibold   my-3'>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Testimonial
+                                        </li>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
+                                            Result
+                                        </li>
+
+
+                                    </ul>
+                                </div>
+                            }
+                        </li>
+                    </div>
+                    <li className='py-4 cursor-pointer'>Blog</li>
+                    <li className='py-4 cursor-pointer'>Prices</li>
 
 
                 </ul>
