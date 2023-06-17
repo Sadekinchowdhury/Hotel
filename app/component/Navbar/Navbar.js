@@ -10,11 +10,12 @@ const Navbar = () => {
     const [up, setUp] = useState(false)
     const [down, setDown] = useState(false)
     const [client, setClient] = useState(false)
+    const [service, setService] = useState(false)
 
 
     return (
         <nav className='bg-white shadow-2xl'>
-            <div className='flex items-center font-medium justify-around'>
+            <div className='flex items-center font-medium justify-between w-11/12 mx-auto'>
                 <div className='z-50 flex  justify-between p-5 md:w-auto w-full'>
                     <img className='md:cursor-pointer h-10 w-20' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438e95ec276_logo_talk-01-01.svg" alt="" />
                     <div className='text-3xl md:hidden block' onClick={() => setOpen(!open)}>
@@ -28,7 +29,7 @@ const Navbar = () => {
 
                 <div className='md:flex hidden items-center justify-between'>
                     {/* for desktop and tablet */}
-                    <ul className='md:flex hidden uppercase gap-8 font-[Roboto Mono] items-center'>
+                    <ul className='md:flex hidden uppercase gap-4 font-[Roboto Mono] items-center'>
 
 
                         <NavLinks />
@@ -49,62 +50,30 @@ const Navbar = () => {
                             Contact Us
                         </button>
                     </div>
-                    {/* <NavLinks></NavLinks> */}
-                    {/* <li>
-                        <h1 onClick={() => setUp(!up)} className="py-4 flex items-center">
-                            Our service
-                            {up ? (
-                                <AiOutlineCaretUp />
-                            ) : (
-                                <AiOutlineCaretDown />
-                            )}
-                        </h1>
-                        {
-                            up && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
-                                <ul className='text-sm font-semibold  my-3'>
-                                    <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                        Our food
-                                    </li>
-                                    <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                        Photo Shooting
-                                    </li>
-                                    <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                        Content Creation
-                                    </li>
-                                    <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                        Sponsorship
-                                        Performance
-                                    </li>
 
-                                </ul>
-                            </div>
-                        }
-                    </li> */}
-                    {/* service */}
                     <div>
                         <li>
-                            <h1 onClick={() => setDown(!down)} className="py-4 flex  items-center">
-                                Our service
-                                {down ? (
+                            <h1 onClick={() => setService(!service)} className="py-4 flex  items-center">
+                                Our Service
+                                {service ? (
                                     <AiOutlineCaretUp />
                                 ) : (
                                     <AiOutlineCaretDown />
                                 )}
                             </h1>
                             {
-                                down && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
-                                    <ul className='text-sm font-semibold  my-3'>
+                                service && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
+                                    <ul className='text-sm font-semibold   my-3'>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Our food
-                                        </li>
-                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Photo Shooting
+                                            Photo Shoting
                                         </li>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
                                             Content Creation
                                         </li>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
-                                            Sponsorship
+                                            SponsorShip
+                                        </li>
+                                        <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
                                             Performance
                                         </li>
 
@@ -113,7 +82,6 @@ const Navbar = () => {
                             }
                         </li>
                     </div>
-                    {/* <h1>client</h1> */}
                     <div>
                         <li>
                             <h1 onClick={() => setClient(!client)} className="py-4 flex  items-center">
@@ -125,7 +93,7 @@ const Navbar = () => {
                                 )}
                             </h1>
                             {
-                                !down && client && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
+                                !down && !service && client && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
                                     <ul className='text-sm font-semibold   my-3'>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
                                             Resturent
@@ -157,7 +125,7 @@ const Navbar = () => {
                                 )}
                             </h1>
                             {
-                                !down && !client && up && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
+                                !down && !service && !client && up && <div className="absolute  md:hidden block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer">
                                     <ul className='text-sm font-semibold   my-3'>
                                         <li className='hover:text-blue-600 py-2 hover:bg-gray-300 px-3 cursor-pointer '>
                                             Testimonial
@@ -174,8 +142,6 @@ const Navbar = () => {
                     </div>
                     <li className='py-4 cursor-pointer'>Blog</li>
                     <li className='py-4 cursor-pointer'>Prices</li>
-
-
                 </ul>
             </div>
 

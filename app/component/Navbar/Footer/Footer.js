@@ -60,7 +60,11 @@ const Footer = () => {
                         <h1 className='font-semibold flex items-center text-xl font-[Roboto Mono] gap-3 mt-3 mb-8'> Addition 📣</h1>
 
 
-                        <p className='font-mono mb-8'>The reference CHR newsletter: starter-main course-dessert to be a hit on social networks!</p>
+                        <div className='text-sm mb-8'> <p>
+                            The reference CHR newsletter: starter
+                        </p>
+                            <p className='mt-2 mb-2'> -main course-dessert to be a hit on</p>
+                            social networks!</div>
 
                         <div>
 

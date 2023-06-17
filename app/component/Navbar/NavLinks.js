@@ -44,7 +44,7 @@ const NavLinks = () => {
     const [activeLink, setActiveLink] = useState(null);
     const [windowWidth, setWindowWidth] = useState(0);
     const submenuRef = useRef(null);
-    const [open, setOpen] = useState(false)
+
 
     useEffect(() => {
         setWindowWidth(window.innerWidth);
