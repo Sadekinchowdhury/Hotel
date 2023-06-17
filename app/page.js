@@ -19,10 +19,12 @@ export default function Home() {
       {isLoading ? <>
         <div className="flex items-center justify-center h-screen">
           <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
-        </div></> : <></>}
+        </div></> : <>
+        <Navbar></Navbar>
+        <Footer></Footer>
+      </>}
 
-      <Navbar></Navbar>
-      <Footer></Footer>
+
     </div>
   )
 }
