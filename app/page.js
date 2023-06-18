@@ -1,7 +1,8 @@
 "use client"
 import { useEffect, useState } from "react";
-import Footer from "./component/Navbar/Footer/Footer";
-import Navbar from "./component/Navbar/Navbar";
+
+import Main from "./component/Main";
+
 
 export default function Home() {
 
@@ -20,8 +21,7 @@ export default function Home() {
         <div className="flex items-center justify-center h-screen">
           <div className="loader ease-linear rounded-full border-8 border-t-8 border-gray-200 h-16 w-16"></div>
         </div></> : <>
-        <Navbar></Navbar>
-        <Footer></Footer>
+        <Main />
       </>}
 
 
