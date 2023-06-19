@@ -1,0 +1,23 @@
+.container {
+    position: relative;
+
+}
+
+.card {
+    position: absolute;
+    right: auto;
+    width: auto;
+    animation: cardAnimation 5s infinite linear;
+}
+
+@keyframes cardAnimation {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+
+
+}

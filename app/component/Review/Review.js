@@ -1,10 +1,20 @@
-import React from 'react';
-import styles from './Google.module.css'
+import React from "react";
+import "tailwindcss/tailwind.css";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
 
-import ImageSlider from './Review/Review';
-import AutoPlay from './Review/Review';
-const GoogleReview = () => {
-
+const AutoPlay = () => {
+    const settings = {
+        dots: true,
+        infinite: true,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        autoplaySpeed: 2000,
+        cssEase: "linear"
+    };
     const review = [
         {
             title: "Marvyn Habibi",
@@ -62,16 +72,16 @@ const GoogleReview = () => {
         },
     ]
     return (
-        <div className='mt-10 py-3'>
-            <div>
-                <h1 className=' text-4xl font-bold text-center'>Join Our 800 customar</h1>
-            </div>
+        <div className="w-full mt-7 mb-8 mx-auto">
+            <h2 className="text-3xl font-bold text-center mb-6">Auto Play</h2>
+            <Slider className="grid grid-cols-1 lg:grid-cols-10 gap-4 mt-5 mb-5" {...settings}>
 
-            {/* <div className={`${styles.container}`}>
-                <div className={`${styles.card} grid grid-cols-1 lg:grid-cols-10 gap-10 mt-5 mb-5 `}>
-                    {
-                        review.map(rev => <div className=''>
 
+                {
+                    review.map(rev => <div className=''>
+
+                        <div className="
+                        flex">
                             <div>
                                 <img src={rev.img} alt="" />
                             </div>
@@ -80,21 +90,16 @@ const GoogleReview = () => {
                                 <p>{rev.description}</p>
                             </div>
                         </div>
-                        )
-                    }
+                    </div>
+                    )
+                }
 
-                </div>
 
-            </div> */}
-            <AutoPlay />
 
-            <div className='flex items-center justify-center'>
-                <button className="bg-white shadow-2xl border-[1px] font-semibold px-14 py-4 rounded text-black">
-                    Learn More
-                </button>
-            </div>
+
+            </Slider>
         </div>
     );
 };
 
-export default GoogleReview;
+export default AutoPlay;

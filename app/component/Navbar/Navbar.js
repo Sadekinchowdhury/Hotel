@@ -27,7 +27,7 @@ const Navbar = () => {
                     </div>
                 </div>
 
-                <div className='md:flex hidden items-center justify-between'>
+                <div className='md:flex relative hidden items-center justify-between'>
                     {/* for desktop and tablet */}
                     <ul className='md:flex hidden uppercase gap-4 font-[Roboto Mono] items-center'>
 
@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
                 {/* for mobile device responsive */}
-                <ul className={`md:hidden bg-white absolute w-full top-0 py-10 mt-8 pl-4 mb-6  duration-500 ${open ? 'top-0' : 'top-[-100%]'}`}>
+                <ul className={`md:hidden bg-white absolute w-full top-0 py-10 mt-8 pl-4 mb-6  duration-500 ${open ? 'top-0' : 'top-[-100%] mb-10'}`}>
                     <div>
                         <button className='bg-yellow-300  px-14 py-4 rounded text-black'>
                             Contact Us
