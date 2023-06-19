@@ -1,4 +1,5 @@
 import React from 'react';
+import Brands from './Brands/Brands';
 
 
 const Brand = () => {
@@ -18,30 +19,7 @@ const Brand = () => {
                 />
             </div> */}
             <div>
-                <div className="">
-                    <ul className='flex transition-transform ease-in-out duration-1000  transform hover:-translate-x-full'>
-                        <li>
-                            <img src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b44d1d5ecb8a_SOLD%20OUT.png" alt="" />
-                        </li>
-
-                        <li>
-                            <img src=" https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b462d35ecb84_ERNEST.png" alt="" />
-                        </li>
-                        <li>
-                            <img src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b4fa095ecb7d_CAREFFOUR.png" alt="" />
-                        </li>
-                        <li>
-                            <img src="  https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b44f065ecb59_AU%20BUREAU.png" alt="" />
-                        </li>
-                        <li>
-                            <img src=" https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b44f065ecb59_AU%20BUREAU.png" alt="" />
-                        </li>
-                        <li>
-                            <img src=" https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b440b65ecb89_IMA.png" alt="" />
-                        </li>
-
-                    </ul>
-                </div>
+                <Brands />
 
             </div>
 

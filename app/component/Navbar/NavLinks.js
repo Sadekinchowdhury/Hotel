@@ -92,7 +92,7 @@ const NavLinks = () => {
 
                     {(activeLink === index || windowWidth <= 768) && link.submenu && (
                         <div
-                            className="absolute hidden md:block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer"
+                            className="z-50 absolute  hidden md:block top-15 rounded-2xl px-6 bg-white shadow-2xl border-[1px] cursor-pointer"
                             ref={submenuRef}
                         >
                             <div className="p-3 grid-cols-1 md:grid-cols-3">

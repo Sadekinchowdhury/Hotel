@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaVolumeUp } from 'react-icons/fa';
+import Animation from './Animation';
 
 
 const Footer = () => {
@@ -57,6 +58,11 @@ const Footer = () => {
                 <div className='grid grid-cols-1 mt-6 md:grid-cols-2 lg:grid-cols-4 gap-8'>
 
                     <div className='bg-yellow-50 border-[2px] text-left items-center justify-center rounded-2xl p-4'>
+
+                        <div className='transform transform-[matrix(1.20366, 0, 0, 1.20366, 78.125, 34.75);
+    opacity: 1]'>
+                            <Animation />
+                        </div>
                         <h1 className='font-semibold flex items-center text-xl font-[Roboto Mono] gap-3 mt-3 mb-8'> Addition 📣</h1>
 
 

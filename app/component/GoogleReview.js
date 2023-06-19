@@ -3,6 +3,7 @@ import styles from './Google.module.css'
 
 import ImageSlider from './Review/Review';
 import AutoPlay from './Review/Review';
+import AutoPlayer from './Review/AutoPlayer';
 const GoogleReview = () => {
 
     const review = [
@@ -62,35 +63,18 @@ const GoogleReview = () => {
         },
     ]
     return (
-        <div className='mt-10 py-3'>
+        <div className='mt-10 bg-[#ffcd00] py-3'>
             <div>
-                <h1 className=' text-4xl font-bold text-center'>Join Our 800 customar</h1>
+                <h1 className=' text-4xl mt-6 font-bold text-center'>Join Our 800 customar</h1>
             </div>
 
-            {/* <div className={`${styles.container}`}>
-                <div className={`${styles.card} grid grid-cols-1 lg:grid-cols-10 gap-10 mt-5 mb-5 `}>
-                    {
-                        review.map(rev => <div className=''>
 
-                            <div>
-                                <img src={rev.img} alt="" />
-                            </div>
-                            <div>
-                                <h1>{rev.title}</h1>
-                                <p>{rev.description}</p>
-                            </div>
-                        </div>
-                        )
-                    }
-
-                </div>
-
-            </div> */}
             <AutoPlay />
+            <AutoPlayer />
 
             <div className='flex items-center justify-center'>
-                <button className="bg-white shadow-2xl border-[1px] font-semibold px-14 py-4 rounded text-black">
-                    Learn More
+                <button className="bg-white shadow-2xl border-[1px] font-semibold px-14 mb-5 py-3 rounded text-black">
+                    Read Google Review
                 </button>
             </div>
         </div>

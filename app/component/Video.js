@@ -46,9 +46,10 @@ const Video = () => {
     return (
         <div className="flex justify-center items-center">
             <div className="relative w-full">
-                <video className="w-full lg:h-auto h-[600px] bg-red-400" muted autoPlay controls>
+                <video className="w-full  lg:h-auto h-[600px] bg-red-400" muted autoPlay controls>
                     <source src="https://pixabay.com/videos/ocean-beach-waves-breaking-waves-160767/" type="video/mp4" />
                 </video>
+
 
                 <div className="absolute top-1/4 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
                     <h1 className="text-3xl lg:text-5xl font-bold text-white">

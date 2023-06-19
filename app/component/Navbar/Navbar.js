@@ -16,9 +16,9 @@ const Navbar = () => {
     return (
         <nav className='bg-white shadow-2xl'>
             <div className='flex items-center font-medium justify-between w-11/12 mx-auto'>
-                <div className='z-50 flex  justify-between p-5 md:w-auto w-full'>
+                <div className='flex relative justify-between p-5 md:w-auto w-full'>
                     <img className='md:cursor-pointer h-10 w-20' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438e95ec276_logo_talk-01-01.svg" alt="" />
-                    <div className='text-3xl md:hidden block' onClick={() => setOpen(!open)}>
+                    <div className='text-3xl md:hidden  z-50 left-4 block' onClick={() => setOpen(!open)}>
                         {/* <FaBars name={`${open ? 'close' : 'menu'}`} /> */}
                         {
                             !open ? <FaBars /> : <FaTimes />
@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
                 {/* for mobile device responsive */}
-                <ul className={`md:hidden bg-white absolute w-full top-0 py-10 mt-8 pl-4 mb-6  duration-500 ${open ? 'top-0' : 'top-[-100%] mb-10'}`}>
+                <ul className={`md:hidden bg-white absolute m-3 w-11/12 mx-auto top-0 py-6 rounded-2xl mt-20  pl-4 mb-6 z-50  duration-500 ${open ? 'top-0' : 'top-[-100%] mb-10'}`}>
                     <div>
                         <button className='bg-yellow-300  px-14 py-4 rounded text-black'>
                             Contact Us
