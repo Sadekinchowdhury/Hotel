@@ -6,7 +6,6 @@ import Slider from "react-slick";
 
 const AutoPlay = () => {
     const settings = {
-
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -60,7 +59,7 @@ const AutoPlay = () => {
         },
     ]
     return (
-        <div className="w-full mt-5  mx-auto">
+        <div className="w-full  mt-5  mx-auto">
 
             <Slider className="" {...settings}>
 

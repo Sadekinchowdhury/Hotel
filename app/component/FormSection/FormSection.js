@@ -1,7 +1,9 @@
 "use-client"
 
-import 'react-phone-number-input/style.css'; // Import the CSS for styling
-import PhoneInput from 'react-phone-number-input';
+import 'react-phone-input-2/lib/style.css';
+import PhoneInput from 'react-phone-input-2';
+
+
 import { useState } from 'react';
 const FormSection = () => {
     const [phoneNumber, setPhoneNumber] = useState('');
@@ -11,12 +13,12 @@ const FormSection = () => {
     };
 
     return (
-        <div className="flex p-10 bg-yellow-300">
+        <div className="flex lg:p-10 mb-6 mt-3 p-2 bg-[#ffcd00]">
             <div className='grid grid-cols-1 gap-10 md:grid-cols-2'>
                 {/* Text Section */}
                 <div className="w-auto h-auto">
                     <div className='w-9/12 mx-auto'>
-                        <h1 className="text-[29px] mt-5 mb-6 font-bold">You have questions, we have the answers.</h1>
+                        <h1 className="text-5xl font-[sans] mt-5 mb-6 font-bold">You have questions, we have <span className='text-white'>the answers</span>.</h1>
                         <p className="mt-4">Need advice, to be accompanied or to know more about what we do, do not hesitate, contact us!</p>
 
                         <ul className='mt-4'>
@@ -25,7 +27,7 @@ const FormSection = () => {
                                     <img className='' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438b65ec22d_check.svg" alt="" />
                                 </div>
                                 <div>
-                                    <p className='mt-4'>attraundsldkjsd</p>
+                                    <p className='mt-4 font-[18px]'>Attract new customar</p>
                                 </div>
                             </div>
                             <div className='flex gap-3 text-xl font-semibold items-center '>
@@ -33,7 +35,7 @@ const FormSection = () => {
                                     <img className='' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438b65ec22d_check.svg" alt="" />
                                 </div>
                                 <div>
-                                    <p className='mt-4'>attraundsldkjsd</p>
+                                    <p className='mt-4 font-[18px]'> Increes your tournover </p>
                                 </div>
                             </div>
                             <div className='flex gap-3 text-xl font-semibold items-center '>
@@ -41,7 +43,7 @@ const FormSection = () => {
                                     <img className='' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438b65ec22d_check.svg" alt="" />
                                 </div>
                                 <div>
-                                    <p className='mt-4'>attraundsldkjsd</p>
+                                    <p className='mt-4 font-[18px]'>Be active on social network</p>
                                 </div>
                             </div>
 
@@ -51,7 +53,7 @@ const FormSection = () => {
                 </div>
 
                 {/* Form Section */}
-                <div className="w-full bg-white rounded-3xl p-6">
+                <div className="w-full bg-white rounded-3xl m-3 mx-auto p-6">
                     <form>
                         <div className="mb-4">
                             <input type="text" placeholder='Forename*' id="name" className="w-full rounded-[5px] px-3 py-3 border border-gray-200 " />
@@ -65,17 +67,17 @@ const FormSection = () => {
 
                         <div>
 
-                            <div className=''>
+                            <div className='mt-2 mb-3 w-full'>
                                 <PhoneInput
-                                    className="py-6"
-                                    placeholder="Enter phone number"
-                                    value={phoneNumber}
-                                    onChange={handlePhoneNumberChange}
+                                    country={'bd'}
+                                    containerStyle={{ width: '100%', height: '50px' }}
+                                    inputStyle={{ width: '100%', height: '100%' }}
+
                                 />
                             </div>
                         </div>
                         <div className='flex items-center justify-center'>
-                            <button className="bg-yellow-300 w-full shadow-2xl border-[1px] font-semibold px-14 mb-5 py-4 rounded text-black">
+                            <button className="bg-[#ffcd00] w-full shadow-2xl border-[1px] font-semibold px-10 mb-5 py-3 rounded text-black">
                                 Discover the strategy
                             </button>
                         </div>

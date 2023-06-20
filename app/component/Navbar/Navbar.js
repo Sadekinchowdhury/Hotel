@@ -44,7 +44,7 @@ const Navbar = () => {
 
 
                 {/* for mobile device responsive */}
-                <ul className={`md:hidden bg-white absolute m-3 w-11/12 mx-auto top-0 py-6 rounded-2xl mt-20  pl-4 mb-6 z-50  duration-500 ${open ? 'top-0' : 'top-[-100%] mb-10'}`}>
+                <ul className={`md:hidden bg-white absolute m-3 w-11/12 mx-auto top-0 py-6 rounded-[1px] mt-20  pl-4 mb-6 z-50  duration-500 ${open ? 'top-0' : 'top-[-100%] mb-10'}`}>
                     <div>
                         <button className='bg-yellow-300  px-14 py-4 rounded text-black'>
                             Contact Us

@@ -4,7 +4,7 @@ import ReactPlayer from 'react-player';
 const Customar = () => {
     return (
         <div className='bg-yellow-400 '>
-            <div className='grid grid-cols-1 gap-10 lg:grid-cols-2 p-10'>
+            <div className='grid grid-cols-1 gap-10 lg:grid-cols-2 lg:p-10 p-3 mx-auto m-3'>
                 <div className='flex items-center  justify-center text-center py-10'>
                     <div>
                         <h1 className='text-5xl py-10 font-sans font-bold '>
@@ -24,7 +24,7 @@ const Customar = () => {
                         </div>
                     </div>
                 </div>
-                <div className='p-6  mb-6 mt-6 lg:w-11/12 bg-white rounded-3xl mx-auto'>
+                <div className='p-6 w-full  h-auto lg:w-10/12 mx-auto mb-6 mt-6  bg-white rounded-3xl m-2'>
                     <div>
                         <div className='flex gap-3 py-5 items-center'>
                             <h1 className='text-xl font-medium'>Dupin</h1>
@@ -36,9 +36,21 @@ const Customar = () => {
                             </div>
                         </div>
 
-                        <video className="w-full  rounded-xl h-[500px]" muted autoPlay controls>
-                            <source src="https://pixabay.com/videos/ocean-beach-waves-breaking-waves-160767/" type="video/mp4" />
-                        </video>
+                        <div className="w-full h-[400px]">
+
+                            <ReactPlayer
+                                url="https://www.youtube.com/watch?v=eEr56MfFP6I"
+                                playing
+                                loop
+                                onPlay={true}
+                                muted
+                                width={"100%"}
+                                height={"100%"}
+
+
+                            />
+
+                        </div>
 
                         <div className='flex justify-between mx-auto p-3'>
                             <div>

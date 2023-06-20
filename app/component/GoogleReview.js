@@ -63,9 +63,9 @@ const GoogleReview = () => {
         },
     ]
     return (
-        <div className='mt-10 bg-[#ffcd00] py-3'>
+        <div className='mt-10 relative bg-[#ffcd00] py-3'>
             <div>
-                <h1 className=' text-4xl mt-6 font-bold text-center'>Join Our 800 customar</h1>
+                <h1 className=' text-4xl font-[gentle] mt-6 font-bold text-center'>Join Our 800 customar</h1>
             </div>
 
 

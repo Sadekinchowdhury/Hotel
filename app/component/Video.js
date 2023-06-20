@@ -66,15 +66,17 @@ const Video = () => {
 
             </div>
             <div className="absolute top-1/3 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
-                <h1 className="text-3xl lg:text-5xl font-bold text-white">
-                    More <span className="text-[#ffcd00]">Visibility</span>
-                </h1>
-                <h1 className="text-3xl lg:text-5xl font-bold text-white">
-                    more <span className="text-[#ffcd00]">followers</span>
-                </h1>
-                <h1 className="text-3xl lg:text-5xl font-bold text-white">
-                    more <span className="text-[#ffcd00]">customers</span>
-                </h1>
+                <div className='text-[gentle]'>
+                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                        More <span className="text-[#ffcd00]">Visibility</span>
+                    </h1>
+                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                        more <span className="text-[#ffcd00]">followers</span>
+                    </h1>
+                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                        more <span className="text-[#ffcd00]">customers</span>
+                    </h1>
+                </div>
 
                 <p className="mt-6 mb-6 text-xl lg:text-2xl text-white">
                     Your future customers are on Instagram. <br />

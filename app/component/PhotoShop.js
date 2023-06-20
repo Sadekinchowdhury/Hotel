@@ -23,17 +23,17 @@ const PhotoShop = () => {
                 </div>
             </div>
 
-            <div className='grid grid-cols-1 mt-10 lg:grid-cols-2 w-11/12 mx-auto shadow-2xl border-[1px] rounded-3xl gap-9'>
+            <div className='grid grid-cols-1 mt-10 lg:grid-cols-2 w-11/12 mx-auto shadow-2xl border-[1px] rounded-3xl gap-6'>
                 <div className=''>
                     <img className='rounded-[35px]' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b433125ec5d0_Shooting%20Photo.jpg" alt="" />
                 </div>
-                <div className='py-10'>
+                <div className='py-10 px-3 w-11/12 mx-auto'>
                     <div className='mb-6 mt-6'>
-                        <p className='text-3xl font-bold'>
+                        <p className='text-4xl font-[gentle] font-bold'>
                             Professional creators
                         </p>
                     </div>
-                    <p className='text-xl font-semibold mb-6'>
+                    <p className='text-[18px] font-normal mb-6'>
                         Beautiful photos and videos catch the eye, but especially your future customers. Our professional photographers and videographers highlight your establishment.
                     </p>
                     <div className=''>

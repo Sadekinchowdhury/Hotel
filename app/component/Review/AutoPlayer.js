@@ -75,7 +75,7 @@ const AutoPlayer = () => {
 
     ]
     return (
-        <div className="w-full  mx-auto">
+        <div className="w-full mx-auto">
 
             <Slider className="" {...settings}>
 
