@@ -256,7 +256,7 @@ const CardSlider = () => {
     ];
 
     return (
-        <div className="w-full mt-7 py-10 relative  mx-auto">
+        <div className="w-full mt-7 py-6 mb-8 relative  mx-auto">
 
             <h1 className="text-6xl  mb-7 font-bold text-center">Discover our articles</h1>
 

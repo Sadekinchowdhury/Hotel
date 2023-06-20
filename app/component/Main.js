@@ -7,8 +7,9 @@ import SubScription from './SubScription';
 import Customar from './Customar';
 import PhotoShop from './PhotoShop';
 import GoogleReview from './GoogleReview';
-import Form from './Form';
+
 import CardSlider from './Card/Card';
+import FormSection from './FormSection/FormSection';
 
 const Main = () => {
     return (
@@ -21,7 +22,7 @@ const Main = () => {
             <PhotoShop />
             <GoogleReview />
             <CardSlider />
-            <Form />
+            <FormSection />
             <Footer></Footer>
         </div>
     );

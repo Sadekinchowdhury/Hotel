@@ -47,7 +47,7 @@ const SubScription = () => {
                         </p>
                     </div>
                 </div>
-                <div className='flex border-[4px]   border-yellow-400 rounded-2xl m-2 p-6 items-center  bg-white   justify-center '>
+                <div className='flex border-2 border-dashed   rounded-2xl m-2 p-6 items-center border-[#ffcd00]   justify-center '>
 
                     <div className='text-center mt-6 mb-6'>
                         <h1 className='text-xl font-extrabold'>Accesible</h1>

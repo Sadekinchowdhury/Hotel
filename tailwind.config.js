@@ -9,7 +9,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        gentle: ['Gentle', 'Trebuchet MS', 'sans-serif'],
+        'trebuchet': ['Trebuchet MS', 'sans-serif'],
+      },
+    },
   },
   plugins: [],
 }

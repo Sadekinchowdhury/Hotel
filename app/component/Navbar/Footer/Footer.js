@@ -35,8 +35,8 @@ const Footer = () => {
     ]
 
     return (
-        <div className='mt-[350px]'>
-            <div className='m-3 '>
+        <div className='mt-20'>
+            <div className='m-3 flex-col'>
                 <div className='text-center  mx-auto items-center'>
 
                     <img className='w-36 h-12 mx-auto' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438e95ec276_logo_talk-01-01.svg" alt="" />
@@ -59,8 +59,7 @@ const Footer = () => {
 
                     <div className='bg-yellow-50 border-[2px] text-left items-center justify-center rounded-2xl p-4'>
 
-                        <div className='transform transform-[matrix(1.20366, 0, 0, 1.20366, 78.125, 34.75);
-    opacity: 1]'>
+                        <div className='transform '>
                             <Animation />
                         </div>
                         <h1 className='font-semibold flex items-center text-xl font-[Roboto Mono] gap-3 mt-3 mb-8'> Addition 📣</h1>
