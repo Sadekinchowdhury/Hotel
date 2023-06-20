@@ -48,7 +48,7 @@ const Video = () => {
 
     return (
         <div className="flex justify-center items-center">
-            <div className="relative w-full">
+            <div className="relative mx-auto">
                 {/* <video className="w-full  lg:h-auto h-[600px]" muted autoPlay controls>
                     <source src="https://pixabay.com/videos/ocean-beach-waves-breaking-waves-160767/" type="video/mp4" />
                    
@@ -57,6 +57,7 @@ const Video = () => {
                     url="https://www.youtube.com/watch?v=eEr56MfFP6I"
                     playing
                     loop
+                    onPlay={true}
                     muted
                     width="1300px"
                     height="700px"
@@ -64,7 +65,7 @@ const Video = () => {
                 />
 
             </div>
-            <div className="absolute top-1/5 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
+            <div className="absolute top-1/3 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
                 <h1 className="text-3xl lg:text-5xl font-bold text-white">
                     More <span className="text-[#ffcd00]">Visibility</span>
                 </h1>

@@ -11,8 +11,11 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gentle: ['Gentle', 'Trebuchet MS', 'sans-serif'],
-        'trebuchet': ['Trebuchet MS', 'sans-serif'],
+
+        gentle: ['Made Gentle', 'sans-serif'],
+        sans: ['Trebuchet MS', 'sans-serif'],
+        family: ['MADE Gentle', 'sans-serif']
+
       },
     },
   },
