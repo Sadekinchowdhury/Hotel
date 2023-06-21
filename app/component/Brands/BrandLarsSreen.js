@@ -4,12 +4,13 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 
-const Brands = () => {
+const BardLarge = () => {
     const settings = {
 
         infinite: true,
-        slidesToShow: 3,
+        slidesToShow: 6,
         slidesToScroll: 1,
+
         autoplay: true,
         speed: 2000,
         autoplaySpeed: 2000,
@@ -36,11 +37,11 @@ const Brands = () => {
 
 
                 {
-                    review.map(rev => <div className='flex-col-1 gap-10 mx-5 p-4 '>
+                    review.map(rev => <div className='flex-col-1 gap-10  '>
 
                         <ul>
                             <li>
-                                <img className=" h-32" src={rev.img} alt="" />
+                                <img className="max-32 h-32" src={rev.img} alt="" />
                             </li>
                         </ul>
                     </div>
@@ -55,4 +56,4 @@ const Brands = () => {
     );
 };
 
-export default Brands;
+export default BardLarge;

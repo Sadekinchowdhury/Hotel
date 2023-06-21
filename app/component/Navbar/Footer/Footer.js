@@ -36,7 +36,7 @@ const Footer = () => {
 
     return (
         <div className='mt-20'>
-            <div className='m-3 flex-col'>
+            <div className='m-3 '>
                 <div className='text-center  mx-auto items-center'>
 
                     <img className='w-36 h-12 mx-auto' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438e95ec276_logo_talk-01-01.svg" alt="" />
@@ -55,7 +55,7 @@ const Footer = () => {
                     </div>
                 </div>
                 <hr className='mt-8' />
-                <div className='grid grid-cols-1 mt-6 md:grid-cols-2 lg:grid-cols-4 gap-8'>
+                <div className='grid grid-cols-1 mt-10 md:grid-cols-2 lg:grid-cols-4 gap-8'>
 
                     <div className='bg-yellow-50 border-[2px] text-left items-center justify-center rounded-2xl p-4'>
 

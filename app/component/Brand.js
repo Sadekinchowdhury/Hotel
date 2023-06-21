@@ -1,12 +1,13 @@
 import React from 'react';
 import Brands from './Brands/Brands';
+import BardLarge from './Brands/BrandLarsSreen';
 
 
 const Brand = () => {
 
     return (
         <div className='bg-[#ffcd00] py-6'>
-            <div className='py-6'>
+            <div className='pt-8 mb-4'>
                 <h1 className='text-[16px]  text-center uppercase font-semibold font-gentle'>EveryWher in Frans <span className='text-sm'>FR</span></h1>
                 <h1 className='text-center text-[#222525] text-5xl font-black  font-[gentle]'>+then 800 merchatns trust us</h1>
             </div>
@@ -19,8 +20,12 @@ const Brand = () => {
                 />
             </div> */}
             <div>
-                <Brands />
-
+                <div className='md:hidden block'>
+                    <Brands />
+                </div>
+                <div className='hidden md:block'>
+                    <BardLarge />
+                </div>
             </div>
 
         </div>
