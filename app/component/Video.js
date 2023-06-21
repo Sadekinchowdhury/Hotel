@@ -45,6 +45,7 @@ import ReactPlayer from 'react-player';
 
 
 const Video = () => {
+    <link href="https://fonts.cdnfonts.com/css/made-gentle" rel="stylesheet" />
 
     return (
         <div className="flex justify-center items-center">
@@ -66,8 +67,8 @@ const Video = () => {
 
             </div>
             <div className="absolute top-1/3 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
-                <div className='text-[gentle]'>
-                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                <div className=''>
+                    <h1 className="text-3xl font-gentle lg:text-5xl font-bold text-white">
                         More <span className="text-[#ffcd00]">Visibility</span>
                     </h1>
                     <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
