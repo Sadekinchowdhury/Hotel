@@ -283,7 +283,7 @@ const CardSlider = () => {
             </Slider>
 
             {/* Slider navigation buttons */}
-            <div className="flex absolute bottom-0 right-4 justify-center mt-4">
+            <div className="flex absolute bottom-0 right-4 justify-center mb-6">
                 <button
                     className="mr-4 text-gray-500 hover:text-gray-700 focus:outline-none"
                     onClick={goToPrev}
