@@ -14,11 +14,11 @@ const Navbar = () => {
 
 
     return (
-        <nav className='bg-white shadow-2xl'>
+        <nav className='bg-white lg:sticky   lg:-top-1 z-50 shadow-2xl'>
             <div className='flex items-center font-medium justify-between w-11/12 mx-auto'>
-                <div className='flex relative justify-between p-5 md:w-auto w-full'>
+                <div className='flex relative z-50 justify-between p-5 md:w-auto w-full'>
                     <img className='md:cursor-pointer h-10 w-20' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438e95ec276_logo_talk-01-01.svg" alt="" />
-                    <div className='text-3xl md:hidden  z-50 left-4 block' onClick={() => setOpen(!open)}>
+                    <div className='text-3xl md:hidden sticky  z-50 left-4 block' onClick={() => setOpen(!open)}>
                         {/* <FaBars name={`${open ? 'close' : 'menu'}`} /> */}
                         {
                             !open ? <FaBars /> : <FaTimes />

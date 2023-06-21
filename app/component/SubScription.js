@@ -3,7 +3,9 @@ import React from 'react';
 const SubScription = () => {
     return (
         <div className='py-9 bg-[rgba(246,240,234,.5)]'>
-            <h1 className='text-[46px] mb-[24px] font-[family] text-center font-black mt-[24px]'>Ok, but why choose <span className='text-yellow-400'>Talk ?</span></h1>
+            <h1 style={{
+                fontFamily: "rumel"
+            }} className='text-[46px] mb-[24px]   text-center font-medium mt-[24px]'>Ok, but why choose <span className='text-yellow-400'>Talk ?</span></h1>
 
 
             <div className='grid grid-cols-1 m-3 md:grid-cols-2 lg:grid-cols-4 gap-5 mx-auto'>

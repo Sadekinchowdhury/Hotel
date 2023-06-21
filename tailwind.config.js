@@ -14,7 +14,7 @@ module.exports = {
 
         gentle: ['Made Gentle', 'sans-serif'],
         sans: ['Trebuchet MS', 'sans-serif'],
-        gentle: ['MADE Gentle', 'sans-serif']
+        made: ['MADE Gentle', 'sans-serif']
 
       },
     },

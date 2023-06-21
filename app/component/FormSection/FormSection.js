@@ -18,8 +18,10 @@ const FormSection = () => {
                 {/* Text Section */}
                 <div className="w-auto h-auto">
                     <div className='w-9/12 mx-auto'>
-                        <h1 className="text-5xl font-[sans] mt-5 mb-6 font-bold">You have questions, we have <span className='text-white'>the answers</span>.</h1>
-                        <p className="mt-4">Need advice, to be accompanied or to know more about what we do, do not hesitate, contact us!</p>
+                        <h1 style={{
+                            fontFamily: "rumel"
+                        }} className="text-[44px] font-medium  mt-5 mb-6  ">You have questions, we have <span className='text-white'>the answers</span>.</h1>
+                        <p className="mt-4 text-[18px]">Need advice, to be accompanied or to know more about what we do, do not hesitate, contact us!</p>
 
                         <ul className='mt-4'>
                             <div className='flex gap-3 text-xl font-semibold items-center '>

@@ -9,7 +9,9 @@ const Brand = () => {
         <div className='bg-[#ffcd00] py-6'>
             <div className='pt-8 mb-4'>
                 <h1 className='text-[16px]  text-center uppercase font-semibold font-gentle'>EveryWher in Frans <span className='text-sm'>FR</span></h1>
-                <h1 className='text-center text-[#222525] text-5xl font-black  font-[gentle]'>+then 800 merchatns trust us</h1>
+                <h1 style={{
+                    fontFamily: "rumel"
+                }} className='text-center text-[#222525] text-[38px] font-medium'>+then 800 merchatns trust us</h1>
             </div>
 
             {/* <div className='relative'>

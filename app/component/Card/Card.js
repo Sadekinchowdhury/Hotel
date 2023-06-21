@@ -258,7 +258,9 @@ const CardSlider = () => {
     return (
         <div className="w-full mt-7 lg:pt-10  py-6 mb-8 relative  mx-auto">
 
-            <h1 className="text-6xl font-[sans] mb-7 font-bold text-center">Discover our articles</h1>
+            <h1 style={{
+                fontFamily: "rumel"
+            }} className="text-6xl font-medium  mb-7 text-[46px] text-center">Discover our articles</h1>
 
             <Slider ref={sliderRef} {...settings}>
                 {cards.map((card, index) => (
@@ -273,7 +275,9 @@ const CardSlider = () => {
                                 />
                             </div>
                             {/* Card content */}
-                            <h1 className="text-2xl mt-6 mb-6 font-semibold">{card.title}</h1>
+                            <h1 style={{
+                                fontFamily: "rumel"
+                            }} className="text-2xl mt-6 mb-6 font-normal">{card.title}</h1>
                             <Link href="" className="text-yellow-300 text-xl font-semibold">
                                 Learn More
                             </Link>

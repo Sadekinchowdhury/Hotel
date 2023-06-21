@@ -37,7 +37,7 @@ const PhotoShop = () => {
                         Beautiful photos and videos catch the eye, but especially your future customers. Our professional photographers and videographers highlight your establishment.
                     </p>
                     <div className=''>
-                        <button className="bg-[#ffcd00]    font-semibold px-14 py-4 rounded text-black">
+                        <button className="bg-[#ffcd00]    font-semibold px-8 py-3 transition-all cursor-pointer duration-200 hover:bg-yellow-300 hover:scale-100 hover:text-gray-400 hover:shadow-2xl hover:-rotate-3  rounded text-black">
                             Learn More
                         </button>
                     </div>

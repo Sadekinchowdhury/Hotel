@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'rumel';
+    src: url('MADEGentle.eot');
+    src: url('MADEGentle.eot?#iefix') format('embedded-opentype'),
+        url('MADEGentle.woff2') format('woff2'),
+        url('MADEGentle.woff') format('woff'),
+        url('MADEGentle.ttf') format('truetype'),
+        url('MADEGentle.svg#MADEGentle') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

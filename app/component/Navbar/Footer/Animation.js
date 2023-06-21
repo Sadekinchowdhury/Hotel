@@ -28,7 +28,7 @@ const Animation = () => {
     }, []);
 
     return (
-        <div className='absolute top-[-90px] bottom-auto left-[35%] right-auto transform rotate-180'>
+        <div className='absolute top-[-90px] bottom-auto left-[38%] right-auto transform -rotate-180'>
             <div style={{}}>
                 <svg
                     ref={svgRef}

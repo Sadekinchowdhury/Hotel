@@ -7,7 +7,9 @@ const Customar = () => {
             <div className='grid grid-cols-1 gap-10 lg:grid-cols-2 lg:p-10 p-3 mx-auto m-3'>
                 <div className='flex items-center  justify-center text-center py-10'>
                     <div>
-                        <h1 className='text-5xl py-10 font-sans font-bold '>
+                        <h1 style={{
+                            fontFamily: "rumel"
+                        }} className='text-[46px] py-10 font-sans font-medium '>
                             Our customers talk <br /> about it better than <br /> we do
                         </h1>
                         <p className='text-xl font-normal'>
@@ -18,7 +20,7 @@ const Customar = () => {
                             </p>
                         </p>
                         <div className='text-center'>
-                            <button className="bg-white shadow-2xl  font-semibold px-14 py-4 rounded text-black">
+                            <button className="bg-white shadow-2xl  font-semibold transition-all cursor-pointer duration-200   hover:scale-100 hover:text-gray-400 hover:shadow-2xl hover:-rotate-3 px-14 py-4 rounded text-black">
                                 Join The Family
                             </button>
                         </div>

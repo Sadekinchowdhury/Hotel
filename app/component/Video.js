@@ -68,13 +68,19 @@ const Video = () => {
             </div>
             <div className="absolute top-1/3 left-[15%] lg:left-1/4 transform lg:-translate-x-1/2">
                 <div className=''>
-                    <h1 className="text-3xl font-gentle lg:text-5xl font-bold text-white">
+                    <h1 style={{
+                        fontFamily: "rumel"
+                    }} className="text-3xl mt-4   lg:text-[52px] font-medium text-white">
                         More <span className="text-[#ffcd00]">Visibility</span>
                     </h1>
-                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                    <h1 style={{
+                        fontFamily: "rumel"
+                    }} className="text-3xl mt-4   lg:text-[52px] font-medium text-white">
                         more <span className="text-[#ffcd00]">followers</span>
                     </h1>
-                    <h1 className="text-3xl font-[gentle] lg:text-5xl font-bold text-white">
+                    <h1 style={{
+                        fontFamily: "rumel"
+                    }} className="text-3xl mt-4  lg:text-[52px] font-medium text-white">
                         more <span className="text-[#ffcd00]">customers</span>
                     </h1>
                 </div>
@@ -84,7 +90,7 @@ const Video = () => {
                     Be active where they are receptive.
                 </p>
                 <div>
-                    <button className="bg-[#ffcd00] font-semibold px-7 py-3 rounded text-black">
+                    <button className="bg-[#ffcd00] transition-all cursor-pointer duration-200 hover:bg-yellow-300 hover:scale-100   hover:shadow-2xl hover:-rotate-3 font-semibold px-7 py-3 rounded text-black">
                         Contact Us
                     </button>
                 </div>
