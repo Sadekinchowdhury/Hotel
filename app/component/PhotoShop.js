@@ -4,21 +4,25 @@ const PhotoShop = () => {
     return (
         <div>
             <div className=''>
-                <h1 className='lg:text-6xl text-3xl my-10 font-bold text-center'>
+                <h1 style={{
+                    fontFamily: "rumel"
+                }} className='lg:text-[52px] text-3xl my-10 font-medium text-center'>
                     4 professions, one offer
                 </h1>
-                <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-10/12 items-center gap-6 m-2  text-center mb-8  mx-auto'>
+                <div style={{
+                    fontFamily: "rumel"
+                }} className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 w-10/12 items-center gap-6 m-2  text-center mb-8  text-[21px]  mx-auto'>
 
-                    <div className='text-2xl py-4 px-6 rounded-2xl shadow-2xl bg-gray-100   font-extrabold'>
+                    <div className='text-2xl py-4 px-6 rounded-2xl shadow-2xl bg-gray-100'>
                         <p> 1. Photo shoot</p>
                     </div>
-                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 font-extrabold'>
+                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 '>
                         <p>2.Publications</p>
                     </div>
-                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 font-extrabold'>
+                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 '>
                         3.Sponsorship
                     </div>
-                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 font-extrabold'>4.Performance</div>
+                    <div className='text-2xl py-4 px-6 rounded-2xl bg-gray-100  text-gray-500 '>4.Performance</div>
 
                 </div>
             </div>
@@ -29,7 +33,9 @@ const PhotoShop = () => {
                 </div>
                 <div className='py-10 px-3 w-11/12 mx-auto'>
                     <div className='mb-6 mt-6'>
-                        <p className='text-4xl font-[gentle] font-bold'>
+                        <p style={{
+                            fontFamily: "rumel"
+                        }} className='text-4xl font-normal'>
                             Professional creators
                         </p>
                     </div>

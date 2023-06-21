@@ -23,7 +23,7 @@ const FormSection = () => {
                         }} className="text-[44px] font-medium  mt-5 mb-6  ">You have questions, we have <span className='text-white'>the answers</span>.</h1>
                         <p className="mt-4 text-[18px]">Need advice, to be accompanied or to know more about what we do, do not hesitate, contact us!</p>
 
-                        <ul className='mt-4'>
+                        <ul className='mt-4 font-sans'>
                             <div className='flex gap-3 text-xl font-semibold items-center '>
                                 <div className='border-b-gray-900 bg-white  border-2 mt-3 border-black  rounded-full'>
                                     <img className='' src="https://uploads-ssl.webflow.com/6449bec445e2b41c675ec13d/6449bec445e2b438b65ec22d_check.svg" alt="" />
@@ -84,7 +84,7 @@ const FormSection = () => {
                             </button>
                         </div>
 
-                        <div className='mt-4 mb-4'>
+                        <div className='mt-4 font-sans mb-4'>
                             <p>By clicking on "Discover the strategy" you acknowledge that you have read and accept the General Terms and Conditions as well as the Privacy </p>
                         </div>
                     </form>
